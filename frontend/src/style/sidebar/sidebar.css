@@ -1,0 +1,17 @@
+.SidebarArea {
+    /* background-color: red; */
+    padding: 0.6rem;
+    height: 100vh;
+}
+
+.Sidebar {
+    width: 15rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SbTop {
+
+}

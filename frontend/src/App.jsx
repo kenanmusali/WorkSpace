@@ -1,7 +1,11 @@
+import Pages from "../pages"
+import './style/root.css'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Pages/>
+    </div>
   )
 }
 

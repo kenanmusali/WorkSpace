@@ -1,0 +1,30 @@
+/* SearchSection */
+.sbSearch {
+    height: 2.2rem;
+    padding-inline: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+
+}
+
+.sbSearch .SearchInput::placeholder {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: var(--grayText);
+    background: none;
+
+}
+
+.sbSearch .SearchInput {
+    border: none;
+    font-size: 12px;
+    outline: none;
+    padding-bottom: 1px;
+    background: none;
+}
+
+/* Ends */

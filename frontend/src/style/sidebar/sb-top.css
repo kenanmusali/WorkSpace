@@ -1,0 +1,56 @@
+
+.SbItemTop {
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.LogoGroup {
+    display: flex;
+    align-items: center;
+}
+
+.LogoText {
+    color: var(--black);
+}
+
+.LogoGroup img {
+    filter: var(--black-filter);
+    -webkit-filter: var(--black-filter);
+}
+
+
+.SbItemTop .TopSecUp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.IconHover:hover {
+
+    transition: all 0.5s;
+}
+
+.IconHover {
+    transition: all 0.5s;
+}
+
+.TopSecDown p:first-child {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.TopSecDown p:last-child {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--lightGrayVersion);
+    margin-top: 0.1rem;
+}
+
+/* Ends */
