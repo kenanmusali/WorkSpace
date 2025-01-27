@@ -1,0 +1,58 @@
+body.ClosedSb .sbSearch {
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+body.ClosedSb .hr {
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+body.ClosedSb .SbItem {
+    display: none;
+    transition: background-color 0.3s ease;
+}
+
+body.ClosedSb .Sidebar  {
+height: 3.1rem;
+width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+body.ClosedSb .SbItemTop  {
+padding: 0.85rem 0.9rem;
+}
+
+body.ClosedSb .SidebarArea   {
+height: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+body.ClosedSb .LogoText, body.ClosedSb .LogoText1 {
+    display: flex;
+}
+
+.LogoText {
+    display: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0;
+    margin-left: 0.3rem;
+    margin-bottom: 0.1rem;
+}
+
+.LogoText1 {
+    display: none;
+    font-weight: 500;
+    font-size: 11px;
+    border-radius: 5px;
+    margin-left: 0.1rem;
+    padding: 0.2rem 0.4rem;
+    height: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--mainColor);
+    background-color: var(--mainBgColor);
+    margin-left: 0.5rem !important;
+    margin-right: 1rem ;
+}

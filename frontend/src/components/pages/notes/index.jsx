@@ -1,23 +1,22 @@
-
 import { Route, Routes } from 'react-router'
-import Sidebar from './sidebar'
+import SidebarNotes from './sidebar' 
 import AllNotes from './allNotes'
 import Archive from './archive'
 import Trash from './trash'
 
-const Notes = () => {
+const Notes = ({ toggleSidebar }) => {
     return (
         <div>
             <div className="divHomearea">
-                <Sidebar />
+                <SidebarNotes onSidebarClick={() => toggleSidebar("calendar")} /> 
                 <Routes>
-                    <Route path="/allNotes" element={<AllNotes />} />
+                    <Route path="/notes" element={<AllNotes />} />
                     <Route path="/archive" element={<Archive />} />
                     <Route path="/trash" element={<Trash />} />
                 </Routes>
             </div>
         </div>
-    )
+    );
 }
 
-export default Notes
+export default Notes;
