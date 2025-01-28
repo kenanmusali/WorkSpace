@@ -14,9 +14,17 @@ body.ClosedSb .SbItem {
 }
 
 body.ClosedSb .Sidebar  {
-height: 3.1rem;
-width: fit-content;
+    height: 3.1rem;
+    width: fit-content;
     transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+body.ClosedSb .TopSecDown  {
+display: none;
 }
 
 body.ClosedSb .SbItemTop  {

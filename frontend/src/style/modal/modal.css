@@ -1,0 +1,25 @@
+.ModalSection {
+    position: absolute;
+    width: 15rem;
+    left: 14.9rem;
+    bottom: -0.3rem;
+    box-shadow: 0px 0px 10px var(--bgColor);
+}
+
+.ItemSectionGroup.ActiveTab .ItemSection {
+    background-color: var(--mainBgColor);
+    transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
+    -webkit-transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
+    -moz-transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
+    -ms-transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
+    -o-transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
+}
+
+.ItemSectionGroup.ActiveTab .ItemSection p{
+    color: var(--mainColor);
+    font-weight: 500;
+}
+
+.ItemSectionGroup.ActiveTab .ItemSection img{
+filter: var(--color-filter);
+}

@@ -24,6 +24,7 @@ import { NavLink } from 'react-router-dom';
 import SearchCalendar from '../../../sections/search/calendar';
 import Refresh from '../../../sections/refresh';
 import Header from '../../../sections/header';
+import SettingsCalendar from '../../../sections/settings/calendar';
 
 // routes
 
@@ -147,12 +148,7 @@ const SidebarCalendar = ({ onSidebarClick }) => {
                                 </div>
                             </div>
                             <Refresh />
-                            <div className="ItemSectionGroup">
-                                <div className="ItemSection">
-                                    <p className='p'>Settings</p>
-                                    <img src={iconSettings} draggable="false" />
-                                </div>
-                            </div>
+                            <SettingsCalendar/>
 
 
 

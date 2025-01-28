@@ -1,0 +1,29 @@
+
+.ModalInside {
+
+    position: absolute;
+    bottom: -0.25rem;
+    width: 100%;
+    left: 0;
+border: none !important;
+    padding: 0.25rem 0rem;
+    
+}
+
+.ModalInside .ItemSectionGroup1:hover .ItemSection {
+    background-color: var(--lightGrayHover);
+    transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
+    -webkit-transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
+    -moz-transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
+    -ms-transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
+    -o-transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
+}
+
+.ItemSectionGroup1.LanActive  .ModalInside {
+    display: flex;
+    flex-direction: column;
+}
+
+.ModalInside {
+    display: none;
+}
