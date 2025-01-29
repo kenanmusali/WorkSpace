@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router'
 import SidebarNotes from './sidebar' 
-import AllNotes from './allNotes'
+import AllNotes from './notes'
 import Archive from './archive'
 import Trash from './trash'
 

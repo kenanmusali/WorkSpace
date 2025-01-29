@@ -1,12 +1,15 @@
 import { useState, useEffect, useRef } from 'react';
-import iconSettings from '../../../../assets/icons/settings.svg';
-import '../../../../style/modal/modal.css';
-import SettingsModal from '../../../../modal/settings';
+import iconSettings from '../../../assets/icons/settings.svg';
+import '../../../style/modal/modal.css';
+import SettingsModal from '../../../modal/settings';
+import { useLanguage } from '../../../hooks/languageContext';  
+import languageData from '../../../utils/languageData';
 
-const SettingsNotes = () => {
+const Settings = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
-
+  const { language } = useLanguage(); 
+  const currentLanguage = languageData[language] || languageData['en'];
   const modalRef = useRef(null);
   const settingsButtonRef = useRef(null);
 
@@ -22,7 +25,6 @@ const SettingsNotes = () => {
     };
 
     const handleClickOutside = (event) => {
-      // Ensure the modal only closes if the click is outside the modal
       if (
         modalRef.current && !modalRef.current.contains(event.target) &&
         settingsButtonRef.current && !settingsButtonRef.current.contains(event.target)
@@ -50,17 +52,17 @@ const SettingsNotes = () => {
       <div
         className={`ItemSectionGroup ${isActive ? 'ActiveTab' : ''}`}
         onClick={toggleModal}
-        ref={settingsButtonRef} // Ref for the button
+        ref={settingsButtonRef} 
       >
         <div className="ItemSection">
-          <p className="p">Settings</p>
+          <p className="p">{currentLanguage.settings}</p>
           <img src={iconSettings} alt="Settings" draggable="false" />
         </div>
 
         {isModalOpen && (
           <div
             ref={modalRef}
-            onClick={handleClickInsideModal} // Prevent closing modal when clicking inside
+            onClick={handleClickInsideModal} 
           >
             <SettingsModal />
           </div>
@@ -70,4 +72,4 @@ const SettingsNotes = () => {
   );
 };
 
-export default SettingsNotes;
+export default Settings;

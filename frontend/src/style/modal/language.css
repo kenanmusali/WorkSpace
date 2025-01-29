@@ -1,13 +1,12 @@
-
 .ModalInside {
 
     position: absolute;
     bottom: -0.25rem;
     width: 100%;
     left: 0;
-border: none !important;
+    border: none !important;
     padding: 0.25rem 0rem;
-    
+
 }
 
 .ModalInside .ItemSectionGroup1:hover .ItemSection {
@@ -19,9 +18,24 @@ border: none !important;
     -o-transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
 }
 
-.ItemSectionGroup1.LanActive  .ModalInside {
+.ItemSectionGroup1.LanActive .ModalInside {
     display: flex;
     flex-direction: column;
+}
+
+.ItemSectionGroup2.ActiveTab .ItemSection2 {
+    background-color: var(--mainBgColor);
+}
+
+.ItemSectionGroup2.ActiveTab .ItemSection2 .p {
+    color: var(--mainColor);
+    font-weight: 500;
+
+}
+
+.ItemSectionGroup2.ActiveTab .ItemSection2 img {
+    filter:var(--color-filter) ;
+    -webkit-filter:var(--color-filter) ;
 }
 
 .ModalInside {

@@ -78,3 +78,7 @@ position: relative;
 .ItemSectionGroup.active .ItemSection:hover {
     background-color: var(--mainBgColor);
 }
+
+.SbItem a {
+    text-decoration: none ;
+  }

@@ -16,7 +16,6 @@ import iconWeek from '../../../../assets/icons/Week.svg';
 import iconMonth from '../../../../assets/icons/Month.svg';
 import iconYear from '../../../../assets/icons/Year.svg';
 import iconSchedule from '../../../../assets/icons/Schedule.svg';
-import iconSettings from '../../../../assets/icons/Settings.svg';
 import iconShortkey from '../../../../assets/icons/Shortkey.svg';
 
 // react-router-dom
@@ -24,7 +23,7 @@ import { NavLink } from 'react-router-dom';
 import SearchCalendar from '../../../sections/search/calendar';
 import Refresh from '../../../sections/refresh';
 import Header from '../../../sections/header';
-import SettingsCalendar from '../../../sections/settings/calendar';
+import Settings from '../../../sections/settings';
 
 // routes
 
@@ -148,7 +147,7 @@ const SidebarCalendar = ({ onSidebarClick }) => {
                                 </div>
                             </div>
                             <Refresh />
-                            <SettingsCalendar/>
+                            <Settings/>
 
 
 

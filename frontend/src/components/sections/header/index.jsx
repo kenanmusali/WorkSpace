@@ -1,9 +1,14 @@
 import  { useState, useEffect } from 'react';
 import iconLogo from '../../../assets/logo/Notes.svg';
+import { useLanguage } from '../../../hooks/languageContext';  
+import languageData from '../../../utils/languageData';
 import iconSidebar from '../../../assets/icons/Sidebar.svg';
 import '../../../style/close.css'
 
 const Header = () => {
+    const { language } = useLanguage(); 
+    const currentLanguage = languageData[language] || languageData['en'];
+
     const [isClosed, setIsClosed] = useState(() => {
         // Retrieve initial state from localStorage
         const storedValue = localStorage.getItem('isClosed');
@@ -39,7 +44,7 @@ const Header = () => {
                 <div className="TopSecUp">
                     <div className="LogoGroup">
                         <img src={iconLogo} draggable="false" alt="Logo" />
-                        <p className="LogoText">Notes</p>
+                        <p className="LogoText">{currentLanguage.headText}</p>
                         <p className="LogoText1">v1.1.0</p>
                     </div>
                     <img
@@ -51,8 +56,8 @@ const Header = () => {
                     />
                 </div>
                 <div className="TopSecDown">
-                    <p>Notes</p>
-                    <p>Version 1.1.0</p>
+                    <p>{currentLanguage.headText}</p>
+                    <p>{currentLanguage.version}</p>
                 </div>
             </div>
         </div>

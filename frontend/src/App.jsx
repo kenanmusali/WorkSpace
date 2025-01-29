@@ -1,12 +1,13 @@
-import Pages from "../pages"
+import Main from "../main"
 import './style/root.css'
+import { LanguageProvider } from '../src/hooks/languageContext';
 
 const App = () => {
   return (
-    <div>
-      <Pages/>
-    </div>
-  )
-}
+    <LanguageProvider>
+      <Main />
+    </LanguageProvider>
+  );
+};
 
-export default App
+export default App;

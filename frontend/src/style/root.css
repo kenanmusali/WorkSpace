@@ -43,6 +43,9 @@
   
   }
   
+  span {
+    height: fit-content;
+  }
   
   body,
   html {
