@@ -21,7 +21,7 @@ const Settings = () => {
   useEffect(() => {
     const handleResize = () => {
       setIsModalOpen(false);
-      setIsActive(false);
+      setIsActive(false); 
     };
 
     const handleClickOutside = (event) => {
