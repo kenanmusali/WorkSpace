@@ -5,6 +5,7 @@ import Week from './week'
 import Month from './month'
 import Year from './year'
 import Schedule from './schedule'
+import Trash from './trash'
 
 const Calendar = ({ toggleSidebar }) => {
     return (
@@ -17,6 +18,7 @@ const Calendar = ({ toggleSidebar }) => {
                     <Route path="/month" element={<Month />} />
                     <Route path="/year" element={<Year />} />
                     <Route path="/schedule" element={<Schedule />} />
+                    <Route path="/trash" element={<Trash />} />
                 </Routes>
             </div>
         </div>

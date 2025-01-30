@@ -15,6 +15,7 @@ const languageData = {
     addLabels: 'Add Labels',
     allNotes: 'All notes',
     settings: 'Settings',
+    labelsList: 'Labels',
   },
   es: {
     language: 'Idioma',
@@ -32,6 +33,7 @@ const languageData = {
     addLabels: 'Agregar etiquetas',
     allNotes: 'Todas las notas',
     settings: 'Configuraciones',
+    labelsList: 'Etiquetas',
   },
   fr: {
     language: 'Langue',
@@ -49,6 +51,7 @@ const languageData = {
     addLabels: 'Ajouter des étiquettes',
     allNotes: 'Toutes les notes',
     settings: 'Paramètres',
+    labelsList: 'Étiquettes',
   },
 };
 

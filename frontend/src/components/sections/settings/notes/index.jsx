@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
-import iconSettings from '../../../assets/icons/settings.svg';
-import '../../../style/modal/modal.css';
-import SettingsModal from '../../../modal/settings';
-import { useLanguage } from '../../../hooks/languageContext';  
-import languageData from '../../../utils/languageData';
+import iconSettings from '../../../../assets/icons/settings.svg';
+import '../../../../style/modal/modal.css';
+import { useLanguage } from '../../../../hooks/languageContext';  
+import languageData from '../../../../utils/languageData';
+import SettingsModalNotes from '../../../../modal/settings/notes';
 
 const Settings = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -64,7 +64,7 @@ const Settings = () => {
             ref={modalRef}
             onClick={handleClickInsideModal} 
           >
-            <SettingsModal />
+            <SettingsModalNotes />
           </div>
         )}
       </div>

@@ -10,12 +10,14 @@ import SearchNotes from '../../../sections/search/notes';
 import Refresh from '../../../sections/refresh';
 import Header from '../../../sections/header';
 import Shortcut from '../../../sections/shortcut';
-import Settings from '../../../sections/settings';
+
 import Trash from '../../../sections/notes/trash';
 import Notes from '../../../sections/notes/notes';
 import Label from '../../../sections/notes/label';
 import Calendar from '../../../sections/notes/calendar';
 import Archive from '../../../sections/notes/archive';
+import Settings from '../../../sections/settings/notes';
+import List from '../../../sections/notes/list';
 
 
 // routes
@@ -43,6 +45,241 @@ const SidebarNotes = ({ onSidebarClick }) => {
                             </NavLink>
                         </div>
                         <div className="hr"></div>
+                    </div>
+                    <div className="SbItem">
+                        <List />
+                    </div>
+
+                    <div className="SbList">
+
+                        <div className="SbListGroup">
+
+                            <div className="SbListItems">
+
+
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+                                <div className="ItemSectionGroup">
+                                    <div className="ItemSection">
+                                        <p className='p'>list</p>
+                                        <img src={""} draggable="false" />
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <span className="divShadeBottom"></span>
                     </div>
 
 

@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'Emoji';
-  src: url('./assets/fonts/AppleColorEmoji.ttf') format('truetype');
+  src: url('../assets/fonts/AppleColorEmoji.ttf') format('truetype');
 }
 
 :root {

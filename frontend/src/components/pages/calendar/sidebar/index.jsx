@@ -23,7 +23,8 @@ import { NavLink } from 'react-router-dom';
 import SearchCalendar from '../../../sections/search/calendar';
 import Refresh from '../../../sections/refresh';
 import Header from '../../../sections/header';
-import Settings from '../../../sections/settings';
+import Settings from '../../../sections/settings/calendar';
+import Trash from '../../../sections/calendar/trash';
 
 // routes
 
@@ -146,8 +147,9 @@ const SidebarCalendar = ({ onSidebarClick }) => {
                                     <img src={iconShortkey} draggable="false" />
                                 </div>
                             </div>
+                            <Trash />
                             <Refresh />
-                            <Settings/>
+                            <Settings />
 
 
 
