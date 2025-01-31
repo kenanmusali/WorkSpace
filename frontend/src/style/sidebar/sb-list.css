@@ -1,0 +1,74 @@
+
+.SbList {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: calc(0.5rem - 4px);
+    padding-bottom: 0.25rem;
+    position: relative;
+}
+
+.SbListGroup {
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.SbListItems .ItemSectionGroup {
+    padding: 0.25rem 0rem 0.25rem 0.5rem;
+}
+
+.SbListItems {
+    margin-top: -0.25rem
+}
+
+
+.SbTop.ListActive {
+    display: none;
+}
+
+.hr.ListActive {
+    display: none;
+}
+
+.SbBottom.ListActive {
+    display: none;
+}
+
+.ItemSectionGroup.ListActive .ItemSection {
+    background-color: var(--mainBgColor);
+}
+
+.ItemSectionGroup.ListActive .ItemSection .p {
+    color: var(--mainColor);
+    font-weight: 500;
+}
+
+.ItemSectionGroup.ListActive .ItemSection img {
+    filter: var(--color-filter);
+    -webkit-filter: var(--color-filter);
+}
+
+.divShade {
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+    background: var(--shade-white);
+    transition:  all 0.3s ;
+    opacity: 1; 
+    pointer-events: auto; 
+    border-radius: 12px;
+}
+
+
+.divShade:hover {
+ height: 10;
+    opacity: 0;
+    
+}
+
+.divShade:active {
+    pointer-events: none;  
+    height: 0rem;
+}

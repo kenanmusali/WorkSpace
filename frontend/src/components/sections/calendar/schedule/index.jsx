@@ -1,22 +1,21 @@
 import { NavLink } from 'react-router-dom';
-import iconYear from '../../../../assets/icons/Year.svg';
+import iconSchedule from '../../../../assets/icons/Schedule.svg';
 import { useLanguage } from '../../../../hooks/languageContext';
 import languageData from '../../../../utils/languageData';
 
-
-const Year = () => {
+const Schedule = () => {
     const { language } = useLanguage();
     const currentLanguage = languageData[language] || languageData['en'];
     return (
         <>
-            <NavLink to="/year" className="ItemSectionGroup">
+            <NavLink to="/schedule" className="ItemSectionGroup">
                 <div className="ItemSection">
-                    <p className='p'>{currentLanguage.year}</p>
-                    <img src={iconYear} draggable="false" />
+                    <p className='p'>{currentLanguage.schedule}</p>
+                    <img src={iconSchedule} draggable="false" />
                 </div>
             </NavLink>
         </>
     )
 }
 
-export default Year
+export default Schedule

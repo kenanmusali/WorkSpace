@@ -1,9 +1,17 @@
-.ModalSection {
+.ModalSectionSetting,
+.ModalSectionShortcut {
+    box-shadow: 0px 0px 10px var(--bgColor);
     position: absolute;
     width: 15rem;
-    left: 14.9rem;
-    bottom: -0.3rem;
-    box-shadow: 0px 0px 10px var(--bgColor);
+    left: 15.05rem;
+}
+
+.ModalSectionSetting {
+    bottom: -0.25rem;
+}
+
+.ModalSectionShortcut {
+    bottom: -4.45rem;
 }
 
 .ItemSectionGroup.ActiveTab .ItemSection {
@@ -15,11 +23,11 @@
     -o-transition: all 0.4s cubic-bezier(.21, .29, .04, .91);
 }
 
-.ItemSectionGroup.ActiveTab .ItemSection p{
+.ItemSectionGroup.ActiveTab .ItemSection p {
     color: var(--mainColor);
     font-weight: 500;
 }
 
-.ItemSectionGroup.ActiveTab .ItemSection img{
-filter: var(--color-filter);
+.ItemSectionGroup.ActiveTab .ItemSection img {
+    filter: var(--color-filter);
 }

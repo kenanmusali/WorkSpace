@@ -3,20 +3,7 @@ import '../../../../style/sidebar/sidebar.css';
 import '../../../../style/sidebar/sb-top.css';
 import '../../../../style/sidebar/sb-search.css';
 import '../../../../style/sidebar/sb-item.css';
-
-// icons
-
-import iconNotes from '../../../../assets/icons/AddNotes.svg';
-import iconCalendar from '../../../../assets/icons/Calendar.svg';
-import iconAddCalendar from '../../../../assets/icons/AddCalendar.svg';
-import iconAddCategory from '../../../../assets/icons/AddCategory.svg';
-import iconToday from '../../../../assets/icons/Today.svg';
-import iconDay from '../../../../assets/icons/Day.svg';
-import iconWeek from '../../../../assets/icons/Week.svg';
-import iconMonth from '../../../../assets/icons/Month.svg';
-import iconYear from '../../../../assets/icons/Year.svg';
-import iconSchedule from '../../../../assets/icons/Schedule.svg';
-import iconShortkey from '../../../../assets/icons/Shortkey.svg';
+import '../../../../style/sidebar/sb-list.css';
 
 // react-router-dom
 import { NavLink } from 'react-router-dom';
@@ -25,6 +12,19 @@ import Refresh from '../../../sections/refresh';
 import Header from '../../../sections/header';
 import Settings from '../../../sections/settings/calendar';
 import Trash from '../../../sections/calendar/trash';
+import ListCalendar from '../../../sections/calendar/list';
+import ListGroup from '../../../sections/calendar/listGroup';
+import Shortcut from '../../../sections/shortcut';
+import Calendar from '../../../sections/calendar/calendar';
+import Event from '../../../sections/calendar/event';
+import Category from '../../../sections/calendar/category';
+import Notes from '../../../sections/calendar/notes';
+import Today from '../../../sections/calendar/today';
+import Day from '../../../sections/calendar/day';
+import Week from '../../../sections/calendar/week';
+import Month from '../../../sections/calendar/month';
+import Year from '../../../sections/calendar/year';
+import Schedule from '../../../sections/calendar/schedule';
 
 // routes
 
@@ -47,93 +47,30 @@ const SidebarCalendar = ({ onSidebarClick }) => {
 
                         <div className="SbItem">
 
-                            <div className="ItemSectionGroup">
-                                <div className="ItemSection">
-                                    <p className='p'>View calendar</p>
-                                    <img src={iconCalendar} draggable="false" />
-                                </div>
-                            </div>
-
-                            <div className="ItemSectionGroup">
-                                <div className="ItemSection">
-                                    <p className='p'>Create event</p>
-                                    <img src={iconAddCalendar} draggable="false" />
-                                </div>
-                            </div>
-
-                            <div className="ItemSectionGroup">
-                                <div className="ItemSection">
-                                    <p className='p'>Add category</p>
-                                    <img src={iconAddCategory} draggable="false" />
-                                </div>
-                            </div>
-
-                            <NavLink to="/notes" className="ItemSectionGroup" onClick={onSidebarClick}>
-                                <div className="ItemSection">
-                                    <p className="p">My notes</p>
-                                    <img src={iconNotes} draggable="false" />
-                                </div>
+                            <Calendar />
+                            <Event />
+                            <Category />
+                            <NavLink to="/notes" onClick={onSidebarClick}>
+                                <Notes />
                             </NavLink>
                         </div>
 
                         <div className="hr"></div>
                         <div className="SbItem">
-
-                            <div className="ItemSectionGroup">
-                                <div className="ItemSection">
-                                    <p className='p'>Today</p>
-                                    <img src={iconToday} draggable="false" />
-                                </div>
-                            </div>
-
-                            <NavLink to="/day" className="ItemSectionGroup">
-                                <div className="ItemSection">
-                                    <p className='p'>Day</p>
-                                    <img src={iconDay} draggable="false" />
-                                </div>
-                            </NavLink>
-
-                            <NavLink to="/week" className="ItemSectionGroup">
-                                <div className="ItemSection">
-                                    <p className='p'>Week</p>
-                                    <img src={iconWeek} draggable="false" />
-                                </div>
-                            </NavLink>
-
-
-                            <NavLink to="/month" className="ItemSectionGroup">
-                                <div className="ItemSection">
-                                    <p className="p">Month</p>
-                                    <img src={iconMonth} draggable="false" />
-                                </div>
-                            </NavLink>
-
-                            <NavLink to="/year" className="ItemSectionGroup">
-                                <div className="ItemSection">
-                                    <p className='p'>Year</p>
-                                    <img src={iconYear} draggable="false" />
-                                </div>
-                            </NavLink>
-
-                            <NavLink to="/schedule" className="ItemSectionGroup">
-                                <div className="ItemSection">
-                                    <p className='p'>Schedule</p>
-                                    <img src={iconSchedule} draggable="false" />
-                                </div>
-                            </NavLink>
-
-
-
-
-
-
+                            <Today />
+                            <Day />
+                            <Week />
+                            <Month />
+                            <Year />
+                            <Schedule />
                         </div>
-
-
-
-
                         <div className="hr"></div>
                     </div>
+                    <div className="SbItem">
+                        <ListCalendar />
+                    </div>
+
+                    <ListGroup />
 
 
 
@@ -141,14 +78,9 @@ const SidebarCalendar = ({ onSidebarClick }) => {
                         <div className="hr"></div>
                         <div className="SbItem">
 
-                            <div className="ItemSectionGroup">
-                                <div className="ItemSection">
-                                    <p className='p'>Shortkey</p>
-                                    <img src={iconShortkey} draggable="false" />
-                                </div>
-                            </div>
-                            <Trash />
                             <Refresh />
+                            <Shortcut />
+                            <Trash />
                             <Settings />
 
 

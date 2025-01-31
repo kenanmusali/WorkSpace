@@ -5,6 +5,7 @@ import Archive from './archive'
 import Trash from './trash'
 
 const Notes = ({ toggleSidebar }) => {
+    
     return (
         <div>
             <div className="divHomearea">

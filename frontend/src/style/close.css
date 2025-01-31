@@ -31,6 +31,10 @@ body.ClosedSb .TopSecDown  {
 display: none;
 }
 
+body.ClosedSb .divShade  {
+display: none;
+}
+
 body.ClosedSb .SbItemTop  {
 padding: 0.85rem 0.9rem;
 }

@@ -8,7 +8,7 @@ import Theme from '../theme';
 function SettingsModalNotes() {
     return (
         <div>
-            <div className="ModalSection sectionStyle">
+            <div className="ModalSectionSetting sectionStyle">
                 <div className="SbItem">
                     <Theme />
                     <Gradient />

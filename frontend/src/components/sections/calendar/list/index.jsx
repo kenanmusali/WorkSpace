@@ -3,7 +3,7 @@ import iconResize from '../../../../assets/icons/Resize.svg';
 import { useLanguage } from '../../../../hooks/languageContext';
 import languageData from '../../../../utils/languageData';
 
-const ListNotes = () => {
+const ListCalendar = () => {
     const { language } = useLanguage();
     const currentLanguage = languageData[language] || languageData['en'];
     const [isActive, setIsActive] = useState(false);
@@ -60,7 +60,7 @@ const ListNotes = () => {
         <div>
             <div className={`ItemSectionGroup ${isActive ? 'ListActive' : ''}`} onClick={handleClick}>
                 <div className="ItemSection ">
-                    <p className="p">{currentLanguage.labelsList}</p>
+                    <p className="p">{currentLanguage.category}</p>
                     <img src={iconResize} draggable="false" />
                 </div>
             </div>
@@ -68,4 +68,4 @@ const ListNotes = () => {
     );
 };
 
-export default ListNotes;
+export default ListCalendar;
