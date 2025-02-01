@@ -2,8 +2,8 @@ import { useLanguage } from '../../../hooks/languageContext';  // Import useLang
 import { useState } from 'react';
 import '../../../style/modal/modal.css';
 import '../../../style/modal/language.css';
-import iconLanguage from '../../../assets/icons/language.svg';
-import iconLanguages from '../../../assets/icons/languages.svg';
+import iconLanguage from '../../../assets/icons/Language.svg';
+import iconLanguages from '../../../assets/icons/Languages.svg';
 import languageData from '../../../utils/languageData'; // Import language data
 
 const Language = () => {
