@@ -7,7 +7,6 @@ const HomeWeb = () => {
   React.useEffect(() => {
     const lastVisitedRoute = localStorage.getItem("lastVisitedRoute");
 
-    // If there's a stored route and it's not the home page, navigate to it
     if (lastVisitedRoute && lastVisitedRoute !== "/") {
       navigate(lastVisitedRoute);
     }

@@ -38,7 +38,7 @@ const Calendar = ({ toggleSidebar }) => {
                     <Route path="/year" element={<Year />} />
                     <Route path="/schedule" element={<Schedule />} />
                     <Route path="/trash" element={<Trash />} />
-                    <Route path="*" element={<div>Page Not Found</div>} />
+                    {/* <Route path="*" element={<div>Page Not Found</div>} /> */}
                 </Routes>
             </div>
         </div>

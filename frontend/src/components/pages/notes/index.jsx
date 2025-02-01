@@ -36,7 +36,7 @@ const Notes = ({ toggleSidebar }) => {
           <Route path="/" element={<HomeWeb />} />
           <Route path="/archive" element={<Archive />} />
           <Route path="/trash" element={<Trash />} />
-          <Route path="*" element={<div>Page Not Found</div>} />
+          {/* <Route path="*" element={<div>Page Not Found</div>} /> */}
         </Routes>
       </div>
     </div>
