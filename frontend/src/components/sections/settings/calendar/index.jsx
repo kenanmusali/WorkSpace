@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import iconSettings from '../../../../assets/icons/settings.svg';
+import iconSettings from '../../../../assets/icons/Settings.svg';
 import '../../../../style/modal/modal.css';
 import { useLanguage } from '../../../../hooks/languageContext';  
 import languageData from '../../../../utils/languageData';
