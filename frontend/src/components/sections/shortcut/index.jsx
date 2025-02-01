@@ -1,7 +1,7 @@
 
 
 import { useState, useEffect, useRef } from 'react';
-import iconShortcut from '../../../assets/icons/Shortkey.svg';
+import iconShortcut from '../../../assets/icons/Shortcut.svg';
 import '../../../style/modal/modal.css';
 import { useLanguage } from '../../../hooks/languageContext';  
 import languageData from '../../../utils/languageData';
