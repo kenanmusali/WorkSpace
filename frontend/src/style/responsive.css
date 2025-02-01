@@ -48,7 +48,7 @@
     }
 
     .SidebarArea {
-        height: 100vh !important;
+        height: 100dvh !important;
     }
 
     body.ClosedSb .Sidebar {
