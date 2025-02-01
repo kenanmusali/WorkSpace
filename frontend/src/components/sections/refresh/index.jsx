@@ -1,6 +1,6 @@
 import { useLanguage } from '../../../hooks/languageContext';  
 import languageData from '../../../utils/languageData';
-import iconRefresh from '../../../assets/icons/refresh.svg';
+import iconRefresh from '../../../assets/icons/Refresh.svg';
 
 const Refresh = () => {
   const { language } = useLanguage();  
