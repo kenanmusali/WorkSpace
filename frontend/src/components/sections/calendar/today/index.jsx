@@ -11,7 +11,7 @@ const Today = () => {
             <div className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className='p'>{currentLanguage.today}</p>
-                    <img src={iconToday} draggable="false" />
+                    <img className='Icon' src={iconToday} draggable="false" />
                 </div>
             </div>
         </div>

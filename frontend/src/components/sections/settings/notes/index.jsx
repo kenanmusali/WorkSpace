@@ -56,7 +56,7 @@ const Settings = () => {
       >
         <div className="ItemSection">
           <p className="p">{currentLanguage.settings}</p>
-          <img src={iconSettings} alt="Settings" draggable="false" />
+          <img className='Icon' src={iconSettings} alt="Settings" draggable="false" />
         </div>
 
         {isModalOpen && (

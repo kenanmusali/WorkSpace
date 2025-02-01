@@ -7,7 +7,7 @@ const Policy = () => {
       <div className="ItemSectionGroup1">
         <div className="ItemSection1">
           <p className='p'>Privacy policy</p>
-          <img src={iconPolicy}  draggable="false"  />
+          <img className='Icon' src={iconPolicy}  draggable="false"  />
         </div>
       </div>
 

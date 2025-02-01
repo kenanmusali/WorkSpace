@@ -1,2 +1,95 @@
-@media screen and (min-width: 350px) and (max-width: 767px) {}
-@media screen and (min-width: 767px) and (max-width: 1024px) {}
+@media screen and (min-width: 350px) and (max-width: 767px) {
+
+    .ItemSectionGroup .ItemSection .p,
+    .SearchInput,
+    .TopSecDown,
+    body.ClosedSb .LogoText,
+    body.ClosedSb .LogoText1,
+    .LogoGroup {
+        display: none !important;
+    }
+
+    .Icon {
+        width: 21px;
+    }
+
+    .Sidebar {
+        width: 4rem !important;
+    }
+
+    .ItemSectionGroup .ItemSection,
+    .SbItemTop .TopSecUp,
+    .sbSearch {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .ItemSection,
+    .ItemSection1,
+    .ItemSection2 {
+        height: 1.7rem !important;
+    }
+
+
+    body.ClosedSb .sbSearch,
+    body.ClosedSb .hr,
+    body.ClosedSb .SbItem,
+    .LogoText1,
+    .LogoText,
+    body.ClosedSb .TopSecDown,
+    body.ClosedSb .divShade,
+    body.ClosedSb .ItemSectionGroup .ItemSection .p,
+    body.ClosedSb .SearchInput,
+    body.ClosedSb .TopSecDown,
+    body.ClosedSb .LogoGroup {
+        display: flex !important;
+
+    }
+
+    .SidebarArea {
+        height: 100vh !important;
+    }
+
+    body.ClosedSb .Sidebar {
+        height: 100% !important;
+        width: 15rem !important;
+    }
+
+
+    body.ClosedSb .ItemSectionGroup .ItemSection,
+    body.ClosedSb .SbItemTop .TopSecUp,
+    body.ClosedSb .sbSearch {
+        display: flex;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    body.ClosedSb .TopSecDown {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ItemSectionGroup .ItemSection .p,
+    body.ClosedSb .sbSearch .SearchInput::placeholder {
+        font-size: 12px;
+    }
+
+    .ModalSectionSetting,
+    .ModalSectionShortcut {
+        left: 4.05rem !important;
+    }
+
+    .ResponsiveOn {
+        display: none;
+    }
+
+    /* box-shadow: 0px 0px 10px var(--bgColor); */
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    .ResponsiveOn {
+        display: none;
+    }
+}

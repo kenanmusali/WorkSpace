@@ -11,7 +11,7 @@ const Schedule = () => {
             <NavLink to="/schedule" className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className='p'>{currentLanguage.schedule}</p>
-                    <img src={iconSchedule} draggable="false" />
+                    <img className='Icon' src={iconSchedule} draggable="false" />
                 </div>
             </NavLink>
         </>

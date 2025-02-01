@@ -10,7 +10,7 @@ const Event = () => {
             <div className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className='p'>{currentLanguage.createEvent}</p>
-                    <img src={iconAddCalendar} draggable="false" />
+                    <img className='Icon' src={iconAddCalendar} draggable="false" />
                 </div>
             </div>
         </div>

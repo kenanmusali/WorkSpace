@@ -10,7 +10,7 @@ const Calendar = () => {
             <div className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className="p">{currentLanguage.calendar}</p>
-                    <img src={iconCalendar} draggable="false" />
+                    <img className='Icon' src={iconCalendar} draggable="false" />
                 </div>
             </div>
         </div>

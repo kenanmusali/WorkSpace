@@ -10,7 +10,7 @@ const Category = () => {
             <div className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className='p'>{currentLanguage.addCategory}</p>
-                    <img src={iconAddCategory} draggable="false" />
+                    <img className='Icon' src={iconAddCategory} draggable="false" />
                 </div>
             </div>
         </div>

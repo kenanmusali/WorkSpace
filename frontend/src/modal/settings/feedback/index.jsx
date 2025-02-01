@@ -7,7 +7,7 @@ const Feedback = () => {
       <div className="ItemSectionGroup1">
         <div className="ItemSection1">
           <p className='p'>Help & feedback</p>
-          <img src={iconFeedback}  draggable="false"  />
+          <img className='Icon' src={iconFeedback}  draggable="false"  />
         </div>
       </div>
 

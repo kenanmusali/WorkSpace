@@ -10,7 +10,7 @@ const SearchCalendar = () => {
     <div>
                     <div className="sbSearch">
                         <input className='SearchInput' type="text" id="" placeholder={currentLanguage.search} />
-                        <img className='IconHover' src={iconSearch} draggable="false" />
+                        <img className=' Icon' src={iconSearch} draggable="false" />
                     </div>
     </div>
   )

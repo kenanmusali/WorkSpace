@@ -61,7 +61,7 @@ const ListCalendar = () => {
             <div className={`ItemSectionGroup ${isActive ? 'ListActive' : ''}`} onClick={handleClick}>
                 <div className="ItemSection ">
                     <p className="p">{currentLanguage.category}</p>
-                    <img src={iconResize} draggable="false" />
+                    <img className='Icon' src={iconResize} draggable="false" />
                 </div>
             </div>
         </div>

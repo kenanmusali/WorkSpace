@@ -15,7 +15,7 @@ const Refresh = () => {
       <div className="ItemSectionGroup">
         <div className="ItemSection" onClick={handleRefresh}>
           <p className='p'>{currentLanguage.refresh}</p>
-          <img src={iconRefresh} draggable="false" alt="refresh-icon" />
+          <img className='Icon' src={iconRefresh} draggable="false" alt="refresh-icon" />
         </div>
       </div>
     </div>

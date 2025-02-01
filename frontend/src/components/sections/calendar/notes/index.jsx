@@ -10,7 +10,7 @@ const Notes = () => {
             <div className="ItemSectionGroup" >
                 <div className="ItemSection">
                     <p className="p">{currentLanguage.myNotes}</p>
-                    <img src={iconNotes} draggable="false" />
+                    <img className='Icon' src={iconNotes} draggable="false" />
                 </div>
             </div>
         </div>

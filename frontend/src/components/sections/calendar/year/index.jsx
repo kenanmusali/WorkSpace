@@ -12,7 +12,7 @@ const Year = () => {
             <NavLink to="/year" className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className='p'>{currentLanguage.year}</p>
-                    <img src={iconYear} draggable="false" />
+                    <img className='Icon' src={iconYear} draggable="false" />
                 </div>
             </NavLink>
         </>

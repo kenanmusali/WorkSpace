@@ -11,7 +11,7 @@ const Week = () => {
       <NavLink to="/week" className="ItemSectionGroup">
         <div className="ItemSection">
           <p className='p'>{currentLanguage.week}</p>
-          <img src={iconWeek} draggable="false" />
+          <img className='Icon' src={iconWeek} draggable="false" />
         </div>
       </NavLink>
     </>

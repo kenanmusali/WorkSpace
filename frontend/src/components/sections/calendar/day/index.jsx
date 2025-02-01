@@ -12,7 +12,7 @@ const Day = () => {
             <NavLink to="/day" className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className='p'>{currentLanguage.day}</p>
-                    <img src={iconDay} draggable="false" />
+                    <img className='Icon' src={iconDay} draggable="false" />
                 </div>
             </NavLink>
         </>

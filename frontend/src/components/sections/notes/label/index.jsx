@@ -11,7 +11,7 @@ const Label = () => {
             <div className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className='p'>{currentLanguage.addLabels}</p>
-                    <img src={iconLabels} draggable="false" />
+                    <img className='Icon' src={iconLabels} draggable="false" />
                 </div>
             </div>
         </div>

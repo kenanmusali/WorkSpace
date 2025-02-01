@@ -25,26 +25,26 @@ const Language = () => {
             <div className={`ItemSectionGroup1 ${isActive ? 'LanActive' : ''}`} onClick={toggleActiveClass}>
                 <div className="ItemSection1">
                     <p className="p">{languageData[language].language}</p>
-                    <img src={iconLanguage} draggable="false" />
+                    <img className='Icon' src={iconLanguage} draggable="false" />
                 </div>
 
                 <div className="ModalInside sectionStyle">
                     <div className={`ItemSectionGroup2 ${activeLang === 'en' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('en')}>
                         <div className="ItemSection2">
                             <p className="p">{languageData[language].english}</p>
-                            <img src={iconLanguages} draggable="false" />
+                            <img className='Icon' src={iconLanguages} draggable="false" />
                         </div>
                     </div>
                     <div className={`ItemSectionGroup2 ${activeLang === 'es' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('es')}>
                         <div className="ItemSection2">
                             <p className="p">{languageData[language].spanish}</p>
-                            <img src={iconLanguages} draggable="false" />
+                            <img className='Icon' src={iconLanguages} draggable="false" />
                         </div>
                     </div>
                     <div className={`ItemSectionGroup2 ${activeLang === 'fr' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('fr')}>
                         <div className="ItemSection2">
                             <p className="p">{languageData[language].french}</p>
-                            <img src={iconLanguages} draggable="false" />
+                            <img className='Icon' src={iconLanguages} draggable="false" />
                         </div>
                     </div>
                 </div>

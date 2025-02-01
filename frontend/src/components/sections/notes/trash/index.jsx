@@ -12,7 +12,7 @@ const Trash = () => {
             <NavLink to="/trash" className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className="p">{currentLanguage.trash}</p>
-                    <img src={iconTrash} draggable="false" />
+                    <img className='Icon' src={iconTrash} draggable="false" />
                 </div>
             </NavLink>
         </>

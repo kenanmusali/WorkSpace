@@ -43,12 +43,12 @@ const Header = () => {
             <div className={`SbItemTop ${isClosed ? 'ClosedSb' : ''}`}>
                 <div className="TopSecUp">
                     <div className="LogoGroup">
-                        <img src={iconLogo} draggable="false" alt="Logo" />
+                        <img className='Icon' src={iconLogo} draggable="false" alt="Logo" />
                         <p className="LogoText">{currentLanguage.headText}</p>
                         <p className="LogoText1">v1.1.0</p>
                     </div>
                     <img
-                        className="IconHover IconToggle"
+                        className="IconHover IconToggle Icon"
                         src={iconSidebar}
                         draggable="false"
                         alt="Toggle"

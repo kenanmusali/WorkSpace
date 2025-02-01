@@ -53,13 +53,13 @@ const Shortcut = () => {
   return (
     <div>
       <div
-        className={`ItemSectionGroup ${isActive ? 'ActiveTab' : ''}`}
+        className={`ItemSectionGroup ResponsiveOn ${isActive ? 'ActiveTab' : ''}`}
         onClick={toggleModal}
         ref={settingsButtonRef} 
       >
         <div className="ItemSection">
           <p className="p">{currentLanguage.shortcut}</p>
-          <img src={iconShortcut} alt="Settings" draggable="false" />
+          <img className='Icon' src={iconShortcut} alt="Settings" draggable="false" />
         </div>
 
         {isModalOpen && (

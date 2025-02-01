@@ -11,7 +11,7 @@ const Archive = () => {
             <NavLink to="/archive" className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className="p">{currentLanguage.archive}</p>
-                    <img src={iconArchive} draggable="false" />
+                    <img className='Icon' src={iconArchive} draggable="false" />
                 </div>
             </NavLink>
         </>

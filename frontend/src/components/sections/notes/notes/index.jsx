@@ -12,7 +12,7 @@ const Notes = () => {
             <NavLink to="/notes" className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className="p">{currentLanguage.allNotes}</p>
-                    <img src={iconNotes} draggable="false" />
+                    <img className='Icon' src={iconNotes} draggable="false" />
                 </div>
             </NavLink>
         </>

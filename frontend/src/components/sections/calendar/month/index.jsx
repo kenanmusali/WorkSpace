@@ -11,7 +11,7 @@ const Month = () => {
             <NavLink to="/month" className="ItemSectionGroup">
                 <div className="ItemSection">
                     <p className="p">{currentLanguage.month}</p>
-                    <img src={iconMonth} draggable="false" />
+                    <img className='Icon' src={iconMonth} draggable="false" />
                 </div>
             </NavLink>
         </>
