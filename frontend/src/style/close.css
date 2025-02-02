@@ -1,50 +1,42 @@
 body.ClosedSb .sbSearch {
     display: none;
-    transition: background-color 0.3s ease;
 }
 
 body.ClosedSb .hr {
     display: none;
-    transition: background-color 0.3s ease;
 }
 
 body.ClosedSb .SbItem {
     display: none;
-    transition: background-color 0.3s ease;
-    -webkit-transition: background-color 0.3s ease;
-    -moz-transition: background-color 0.3s ease;
-    -ms-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
+
 }
 
-body.ClosedSb .Sidebar  {
+body.ClosedSb .Sidebar {
     height: 3.1rem;
     width: fit-content;
-    transition: background-color 0.3s ease;
-    -webkit-transition: background-color 0.3s ease;
-    -moz-transition: background-color 0.3s ease;
-    -ms-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
+
+    /*animation: bounce2 2s;
+     */
 }
 
-body.ClosedSb .TopSecDown  {
-display: none;
+body.ClosedSb .TopSecDown {
+    display: none;
 }
 
-body.ClosedSb .divShade  {
-display: none;
+body.ClosedSb .divShade {
+    display: none;
 }
 
-body.ClosedSb .SbItemTop  {
-padding: 0.85rem 0.9rem;
+body.ClosedSb .SbItemTop {
+    padding: 0.85rem 0.9rem;
 }
 
-body.ClosedSb .SidebarArea   {
-height: fit-content;
-    transition: background-color 0.3s ease;
+body.ClosedSb .SidebarArea {
+    height: fit-content;
 }
 
-body.ClosedSb .LogoText, body.ClosedSb .LogoText1 {
+body.ClosedSb .LogoText,
+body.ClosedSb .LogoText1 {
     display: flex;
 }
 
@@ -70,5 +62,5 @@ body.ClosedSb .LogoText, body.ClosedSb .LogoText1 {
     color: var(--mainColor);
     background-color: var(--mainBgColor);
     margin-left: 0.5rem !important;
-    margin-right: 1rem ;
+    margin-right: 1rem;
 }

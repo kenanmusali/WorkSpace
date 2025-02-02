@@ -9,7 +9,7 @@ const Notes = () => {
     const currentLanguage = languageData[language] || languageData['en'];
     return (
         <>
-            <NavLink to="/notes" className="ItemSectionGroup">
+            <NavLink to="/notes" className="ItemSectionGroup ">
                 <div className="ItemSection">
                     <p className="p">{currentLanguage.allNotes}</p>
                     <img className='Icon' src={iconNotes} draggable="false" />

@@ -1,0 +1,48 @@
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.Sidebar {
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+
+body.ClosedSb .Sidebar,
+.SbItem,
+.SbList,
+.divShade,
+.sbSearch,
+.Sidebar,
+.SbItemTop {
+  animation: fade-in-down 1s ease 1;
+  -webkit-animation: fade-in-down 1s ease 1;
+}
+
+.ModalSectionSetting,
+.ModalSectionShortcut {
+  animation: fade-in-down 1s ease 1;
+  -webkit-animation: fade-in-down 1s ease 1
+}
+
+/* .ItemAnimation {
+  animation: fade-in-down 0.5s ease 1;
+  -webkit-animation: fade-in-down 0.5s ease 1;
+}
+
+.ItemAnimation2 {
+  animation: fade-in-down 1s ease 1;
+  -webkit-animation: fade-in-down 1s ease 1;
+} */

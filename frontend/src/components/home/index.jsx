@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../../style/home.css';
 import '../../style/responsive.css';
+import '../../style/animation.css'
 import Calendar from '../pages/calendar';
 import Notes from '../pages/notes';
 

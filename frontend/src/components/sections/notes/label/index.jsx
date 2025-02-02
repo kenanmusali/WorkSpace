@@ -8,7 +8,7 @@ const Label = () => {
 
     return (
         <div>
-            <div className="ItemSectionGroup">
+            <div className="ItemSectionGroup ">
                 <div className="ItemSection">
                     <p className='p'>{currentLanguage.addLabels}</p>
                     <img className='Icon' src={iconLabels} draggable="false" />

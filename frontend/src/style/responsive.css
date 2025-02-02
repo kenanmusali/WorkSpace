@@ -49,11 +49,15 @@
 
     .SidebarArea {
         height: 100dvh !important;
+        width: 5.4rem;
     }
 
     body.ClosedSb .Sidebar {
-        height: 100% !important;
+        position: fixed;
+        height: calc(100% - 1.4rem) !important;
         width: 15rem !important;
+        box-shadow: 10px 0px 70px var(--bgColor);
+
     }
 
 
@@ -71,20 +75,24 @@
     }
 
     .ItemSectionGroup .ItemSection .p,
+    .ItemSectionGroup1 .ItemSection1 .p,
+    .ItemSectionGroup2 .ItemSection2 .p,
     body.ClosedSb .sbSearch .SearchInput::placeholder {
         font-size: 12px;
     }
 
-    .ModalSectionSetting,
-    .ModalSectionShortcut {
+    .ModalSectionSetting {
         left: 4.05rem !important;
+    }
+
+    body.ClosedSb .ModalSectionSetting {
+        right: 0 !important;
     }
 
     .ResponsiveOn {
         display: none;
     }
 
-    /* box-shadow: 0px 0px 10px var(--bgColor); */
 
 }
 

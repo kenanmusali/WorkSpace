@@ -10,17 +10,15 @@ const Header = () => {
     const currentLanguage = languageData[language] || languageData['en'];
 
     const [isClosed, setIsClosed] = useState(() => {
-        // Retrieve initial state from localStorage
         const storedValue = localStorage.getItem('isClosed');
-        return storedValue === 'true'; // Convert to boolean
+        return storedValue === 'true'; 
     });
 
     const toggleClass = () => {
         const newState = !isClosed;
         setIsClosed(newState);
-        localStorage.setItem('isClosed', newState); // Update localStorage
+        localStorage.setItem('isClosed', newState);
 
-        // Add or remove the class on the body element
         if (newState) {
             document.body.classList.add('ClosedSb');
         } else {
@@ -29,7 +27,6 @@ const Header = () => {
     };
 
     useEffect(() => {
-        // Sync state with localStorage on mount
         const storedValue = localStorage.getItem('isClosed');
         if (storedValue === 'true') {
             document.body.classList.add('ClosedSb');
@@ -52,7 +49,7 @@ const Header = () => {
                         src={iconSidebar}
                         draggable="false"
                         alt="Toggle"
-                        onClick={toggleClass} // Add onClick handler
+                        onClick={toggleClass} 
                     />
                 </div>
                 <div className="TopSecDown">
