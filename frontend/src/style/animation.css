@@ -27,14 +27,15 @@ body.ClosedSb .Sidebar,
 .sbSearch,
 .Sidebar,
 .SbItemTop {
-  animation: fade-in-down 1s ease 1;
-  -webkit-animation: fade-in-down 1s ease 1;
+  animation: fade-in-down 0.7s ease 1;
+  -webkit-animation: fade-in-down 0.7s ease 1;
 }
 
 .ModalSectionSetting,
-.ModalSectionShortcut {
-  animation: fade-in-down 1s ease 1;
-  -webkit-animation: fade-in-down 1s ease 1
+.ModalSectionShortcut,
+.ModalInside {
+  animation: fade-in-down 0.7s ease 1;
+  -webkit-animation: fade-in-down 0.7s ease 1;
 }
 
 /* .ItemAnimation {

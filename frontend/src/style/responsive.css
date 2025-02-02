@@ -89,6 +89,32 @@
         right: 0 !important;
     }
 
+    body.ClosedSb .PopUpLeft::after {
+        left: 2.75rem !important;
+        top: -0.35rem;
+        margin-left: 0rem !important;
+    }
+
+    .PopUpLeft::after {
+        margin-top: 0.05rem !important;
+        margin-left: 0.5rem;
+    }
+
+    .ArrowSideLeftPopup{
+        right: -2.45rem !important;
+        bottom: 0.1rem !important;
+    }
+    body.ClosedSb .ArrowSideLeftPopup{
+        
+        right: -2rem !important;
+        bottom: 0.1rem
+    }
+
+    .PopUpRight::after, 
+    .PopUpLeft::after{
+        font-size: 12px !important;
+    }
+
     .ResponsiveOn {
         display: none;
     }

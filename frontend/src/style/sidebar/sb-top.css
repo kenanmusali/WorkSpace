@@ -36,7 +36,7 @@ font-weight: 500;
     color: var(--black);
 }
 
-.LogoGroup img {
+.LogoGroup .PopUpRight img {
     filter: var(--black-filter);
     -webkit-filter: var(--black-filter);
 }

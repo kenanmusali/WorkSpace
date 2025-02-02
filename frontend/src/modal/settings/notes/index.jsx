@@ -9,6 +9,7 @@ function SettingsModalNotes() {
     return (
         <div>
             <div className="ModalSectionSetting sectionStyle">
+                <div className="ArrowSideRight"></div>
                 <div className="SbItem">
                     <Theme />
                     <Gradient />

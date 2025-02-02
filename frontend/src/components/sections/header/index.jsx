@@ -1,17 +1,17 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import iconLogo from '../../../assets/logo/Notes.svg';
-import { useLanguage } from '../../../hooks/languageContext';  
+import { useLanguage } from '../../../hooks/languageContext';
 import languageData from '../../../utils/languageData';
 import iconSidebar from '../../../assets/icons/Sidebar.svg';
 import '../../../style/close.css'
 
 const Header = () => {
-    const { language } = useLanguage(); 
+    const { language } = useLanguage();
     const currentLanguage = languageData[language] || languageData['en'];
 
     const [isClosed, setIsClosed] = useState(() => {
         const storedValue = localStorage.getItem('isClosed');
-        return storedValue === 'true'; 
+        return storedValue === 'true';
     });
 
     const toggleClass = () => {
@@ -38,19 +38,24 @@ const Header = () => {
     return (
         <div>
             <div className={`SbItemTop ${isClosed ? 'ClosedSb' : ''}`}>
-                <div className="TopSecUp">
+                <div className="TopSecUp " >
                     <div className="LogoGroup">
-                        <img className='Icon' src={iconLogo} draggable="false" alt="Logo" />
+                        <img className='Icon' src={iconLogo} draggable="false" />
                         <p className="LogoText">{currentLanguage.headText}</p>
                         <p className="LogoText1">v1.1.0</p>
                     </div>
-                    <img
-                        className="IconHover IconToggle Icon"
-                        src={iconSidebar}
-                        draggable="false"
-                        alt="Toggle"
-                        onClick={toggleClass} 
-                    />
+
+                    <div className="PopUpLeft" data-alt={currentLanguage.sidebar}>
+                        <div className="ArrowSideLeftPopup"></div>
+                        <img
+                            className="IconHover IconToggle Icon"
+                            src={iconSidebar}
+                            draggable="false"
+                            alt="Sidebar"
+                            onClick={toggleClass}
+                        />
+                    </div>
+
                 </div>
                 <div className="TopSecDown">
                     <p>{currentLanguage.headText}</p>

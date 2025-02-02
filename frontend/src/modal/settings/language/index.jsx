@@ -27,7 +27,6 @@ const Language = () => {
                     <p className="p">{languageData[language].language}</p>
                     <img className='Icon' src={iconLanguage} draggable="false" />
                 </div>
-
                 <div className="ModalInside sectionStyle">
                     <div className={`ItemSectionGroup2 ${activeLang === 'en' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('en')}>
                         <div className="ItemSection2">
@@ -47,6 +46,74 @@ const Language = () => {
                             <img className='Icon' src={iconLanguages} draggable="false" />
                         </div>
                     </div>
+                    <div className={`ItemSectionGroup2 ${activeLang === 'de' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('de')}>
+                        <div className="ItemSection2">
+                            <p className="p">{languageData[language].german}</p>
+                            <img className='Icon' src={iconLanguages} draggable="false" />
+                        </div>
+                    </div>
+                    <div className={`ItemSectionGroup2 ${activeLang === 'it' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('it')}>
+                        <div className="ItemSection2">
+                            <p className="p">{languageData[language].italian}</p>
+                            <img className='Icon' src={iconLanguages} draggable="false" />
+                        </div>
+                    </div>
+                    <div className={`ItemSectionGroup2 ${activeLang === 'pt' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('pt')}>
+                        <div className="ItemSection2">
+                            <p className="p">{languageData[language].portuguese}</p>
+                            <img className='Icon' src={iconLanguages} draggable="false" />
+                        </div>
+                    </div>
+                    <div className={`ItemSectionGroup2 ${activeLang === 'ru' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('ru')}>
+                        <div className="ItemSection2">
+                            <p className="p">{languageData[language].russian}</p>
+                            <img className='Icon' src={iconLanguages} draggable="false" />
+                        </div>
+                    </div>
+                    <div className={`ItemSectionGroup2 ${activeLang === 'tr' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('tr')}>
+                        <div className="ItemSection2">
+                            <p className="p">{languageData[language].turkish}</p>
+                            <img className='Icon' src={iconLanguages} draggable="false" />
+                        </div>
+                    </div>
+                    <div className={`ItemSectionGroup2 ${activeLang === 'az' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('az')}>
+                        <div className="ItemSection2">
+                            <p className="p">{languageData[language].azerbaijani}</p>
+                            <img className='Icon' src={iconLanguages} draggable="false" />
+                        </div>
+                    </div>
+                    <div className={`ItemSectionGroup2 ${activeLang === 'pl' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('pl')}>
+                        <div className="ItemSection2">
+                            <p className="p">{languageData[language].polish}</p>
+                            <img className='Icon' src={iconLanguages} draggable="false" />
+                        </div>
+                    </div>
+                    <div className={`ItemSectionGroup2 ${activeLang === 'nl' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('nl')}>
+                        <div className="ItemSection2">
+                            <p className="p">{languageData[language].dutch}</p>
+                            <img className='Icon' src={iconLanguages} draggable="false" />
+                        </div>
+                    </div>
+                    <div className={`ItemSectionGroup2 ${activeLang === 'sv' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('sv')}>
+                        <div className="ItemSection2">
+                            <p className="p">{languageData[language].swedish}</p>
+                            <img className='Icon' src={iconLanguages} draggable="false" />
+                        </div>
+                    </div>
+                    <div className={`ItemSectionGroup2 ${activeLang === 'no' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('no')}>
+                        <div className="ItemSection2">
+                            <p className="p">{languageData[language].norwegian}</p>
+                            <img className='Icon' src={iconLanguages} draggable="false" />
+                        </div>
+                    </div>
+                    <div className={`ItemSectionGroup2 ${activeLang === 'fi' ? 'ActiveTab' : ''}`} onClick={() => handleLanguageChange('fi')}>
+                        <div className="ItemSection2">
+                            <p className="p">{languageData[language].finnish}</p>
+                            <img className='Icon' src={iconLanguages} draggable="false" />
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>

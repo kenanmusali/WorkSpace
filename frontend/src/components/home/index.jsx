@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import '../../style/home.css';
 import '../../style/responsive.css';
-import '../../style/animation.css'
+import '../../style/animation.css';
+import '../../style/popup.css';
 import Calendar from '../pages/calendar';
 import Notes from '../pages/notes';
 import Account from '../pages/account';
