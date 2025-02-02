@@ -1,0 +1,38 @@
+.SideBarAccount {
+    position: absolute;
+    right: .7rem;
+    top: .7rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: .6rem .6rem .6rem .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.SideBarAccount .AccountGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AccountGroup .IconHover {
+    rotate: 180deg;
+}
+
+.SideBarAccount .AccountSection {
+    display: flex;
+    margin-left: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgColor);
+    height: 31px;
+    width: 31px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+

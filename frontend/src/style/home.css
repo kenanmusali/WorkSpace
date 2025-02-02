@@ -1,3 +1,5 @@
-.divHome, .divHomeArea {
+.divHome,
+.divHomeArea {
     display: flex;
+    position: relative;
 }

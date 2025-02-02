@@ -14,9 +14,6 @@ body.ClosedSb .SbItem {
 body.ClosedSb .Sidebar {
     height: 3.1rem;
     width: fit-content;
-
-    /*animation: bounce2 2s;
-     */
 }
 
 body.ClosedSb .TopSecDown {
@@ -45,8 +42,7 @@ body.ClosedSb .LogoText1 {
     font-weight: 500;
     font-size: 16px;
     line-height: 0;
-    margin-left: 0.3rem;
-    margin-bottom: 0.1rem;
+
 }
 
 .LogoText1 {

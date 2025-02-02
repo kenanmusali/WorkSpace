@@ -4,6 +4,7 @@ import '../../style/responsive.css';
 import '../../style/animation.css'
 import Calendar from '../pages/calendar';
 import Notes from '../pages/notes';
+import Account from '../pages/account';
 
 function Home() {
     const [calendarSidebarVisible, setCalendarSidebarVisible] = useState(() => {
@@ -40,9 +41,12 @@ function Home() {
 
     return (
         <div>
-            <div className="divHome">
-                {notesSidebarVisible && <Notes toggleSidebar={toggleSidebar} />}
-                {calendarSidebarVisible && <Calendar toggleSidebar={toggleSidebar} />}
+            <div className="divHomeArea">
+                <div className="divHome">
+                    {notesSidebarVisible && <Notes toggleSidebar={toggleSidebar} />}
+                    {calendarSidebarVisible && <Calendar toggleSidebar={toggleSidebar} />}
+                </div>
+                <Account />
             </div>
         </div>
     );
