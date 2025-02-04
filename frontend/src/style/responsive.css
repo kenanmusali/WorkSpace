@@ -90,35 +90,40 @@
     }
 
     body.ClosedSb .PopUpLeft::after {
-        left: 2.75rem !important;
-        top: -0.35rem;
-        margin-left: 0rem !important;
+        left: 2.4rem;
+        top: 50%;
+        transform: translate(0, -50%);
     }
 
     .PopUpLeft::after {
-        margin-top: 0.05rem !important;
+        left: 2.75rem;
+        top: 50%;
+        transform: translate(0, -50%);
         margin-left: 0.5rem;
     }
 
-    .ArrowSideLeftPopup{
+    .ArrowSideLeftPopup {
         right: -2.45rem !important;
-        bottom: 0.1rem !important;
-    }
-    body.ClosedSb .ArrowSideLeftPopup{
-        
-        right: -2rem !important;
-        bottom: 0.1rem
+
     }
 
-    .PopUpRight::after, 
-    .PopUpLeft::after{
+    body.ClosedSb .ArrowSideLeftPopup {
+        right: -2.1rem !important;
+
+    }
+
+    .PopUpRight::after,
+    .PopUpLeft::after {
         font-size: 12px !important;
     }
 
     .ResponsiveOn {
         display: none;
     }
-
+    .IconToggle  {
+        margin-top: 0rem !important;
+      }
+      
 
 }
 

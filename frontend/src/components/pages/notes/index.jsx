@@ -27,7 +27,7 @@ const Notes = ({ toggleSidebar }) => {
 
   return (
     <div>
-      <div className="divHomeArea">
+      <div className='divHome'>
         {location.pathname !== "/" && (
           <SidebarNotes onSidebarClick={() => toggleSidebar("calendar")} />
         )}

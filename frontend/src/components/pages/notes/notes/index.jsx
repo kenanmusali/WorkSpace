@@ -3,10 +3,12 @@ import NotesGrid from "../../../dashboard/notes/grid/notes"
 
 const Notes = () => {
   return (
-    <div>
-      <AddNotes/>
-      <NotesGrid/>
-    </div>
+    <>
+      <div className="divHomeArea">
+        <AddNotes />
+        <NotesGrid />
+      </div>
+    </>
   )
 }
 

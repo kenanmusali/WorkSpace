@@ -10,7 +10,6 @@ const Account = () => {
     return (
         <div>
             <div className="SideBarAccount sectionStyle">
-                <div className="ArrowSideRightPopup"></div>
                 <div className="AccountGroup PopUpRight" data-alt={currentLanguage.sidebar}>
                     <img className='Icon noSelect IconHover' src={iconSideBar} data-alt="Sidebar" draggable="false" />
                     <div className="AccountSection noSelect">

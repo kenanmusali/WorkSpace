@@ -1,0 +1,109 @@
+.AddArea {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   min-height: 46vh;
+   /* background-color: var(--bgColor); */
+   padding: 0.7rem 0rem;
+}
+
+.AddGroup {
+   width: 100%;
+   height: fit-content;
+   max-width: 35rem;
+}
+
+.addNotesOff {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 3.3rem;
+   width: 100%;
+   padding-inline: 1.5rem 1rem;
+}
+
+.addNotesOff:hover {
+   outline: 2px solid var(--mainBgColor);
+}
+
+.addNotesOff p {
+   font-size: 16px;
+   font-weight: 500;
+   color: var(--grayText);
+   
+}
+
+.addNotesOn {
+   padding: 0.5rem;
+   height: fit-content;
+}
+
+.textArea {
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+   background-color: var(--bgColorArea);
+   padding: 1.2rem 0.5rem;
+}
+
+.titleInput,
+.bodyInput {
+   width: 100%;
+   border-radius: 4px;
+   background: none;
+   border: none;
+   padding-inline: 0.5rem;
+
+}
+
+.titleInput {
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.bodyInput {
+   font-size: 14px;
+}
+
+
+
+.titleInput::placeholder,
+.bodyInput::placeholder {
+   font-size: 16px;
+   color: var(--grayText);
+   font-weight: 400;
+}
+
+ .titleInput:focus,
+.bodyInput:focus {
+  border: none; 
+  outline: none; 
+  box-shadow: none; 
+}
+
+
+
+
+
+
+
+ .bodyInput {
+   width: 100%;
+   resize: none; 
+   white-space: pre-wrap; 
+   overflow-wrap: break-word; 
+   overflow-y: auto; 
+   box-sizing: border-box; 
+   line-height: 1.5; 
+ }
+
+ .hidden {
+   display: none;
+ }
+ 
+ .show {
+   display: block;
+ }
+ 

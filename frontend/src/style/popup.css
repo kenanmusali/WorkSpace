@@ -1,125 +1,117 @@
-.PopUpRight {
+.PopUpRight,
+.PopUpTop,
+.PopUpBottom,
+.PopUpLeft {
   position: relative;
   display: inline-block;
 }
 
 .PopUpLeft {
-  position: relative;
-  display: inline-block;
   height: 19px;
+}
 
+.IconToggle {
+  margin-top: 0.045rem;
 }
 
 .PopUpRight::after,
-.PopUpLeft::after {
+.PopUpLeft::after,
+.PopUpBottom::after,
+.PopUpTop::after {
   content: attr(data-alt);
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--white);
   color: var(--grayText);
-  padding: 0.5rem 0.8rem;
+  padding: 0rem 0.5rem;
+  height: 1.5rem;
   border-radius: 5px;
   font-weight: 500;
   font-size: 11px;
   white-space: nowrap;
+  /* opacity: 1; */
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease-in-out 1s;
-  -webkit-transition: opacity 0.3s ease-in-out 1s;
-  -moz-transition: opacity 0.3s ease-in-out 1s;
-  -ms-transition: opacity 0.3s ease-in-out 1s;
-  -o-transition: opacity 0.3s ease-in-out 1s;
 }
-
-
-
 
 .PopUpLeft::after {
   left: 2.75rem;
-  top: -0.35rem;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.PopUpTop::after {
+  left: -100%;
+  bottom: 2.2rem;
+  
 }
 
 .PopUpRight::after {
   right: 5.4rem;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.PopUpBottom::after {
+  left: -100%;
+  top: 3.25rem;
 }
 
 .PopUpRight:hover::after,
-.PopUpLeft:hover::after {
+.PopUpLeft:hover::after,
+.PopUpTop:hover::after,
+.PopUpBottom:hover::after {
   opacity: 1;
 
 }
 
-
-.ArrowSideRightPopup {
+.ArrowSideRightPopup,
+.ArrowSideLeftPopup {
   position: absolute;
   background-color: var(--white);
-
+  z-index: 9;
   height: 13px;
   width: 13px;
-  transform: rotate(225deg) skew(-5deg, -5deg);
-  left: -1.1rem;
-  bottom: 1.2rem;
   border-radius: 0px 10px 0px 4px;
   -webkit-border-radius: 0px 10px 0px 4px;
   -moz-border-radius: 0px 10px 0px 4px;
   -ms-border-radius: 0px 10px 0px 4px;
   -o-border-radius: 0px 10px 0px 4px;
-  border-left: 1px solid var(--white);
-  border-bottom: 1px solid var(--white);
+}
+
+.ArrowSideRightPopup {
+  transform: rotate(225deg) skew(-5deg, -5deg);
+  left: -1.1rem;
+  top: calc(50% - 0.4rem);
+  transform: translate(0, -50%);
   -webkit-transform: rotate(225deg) skew(-5deg, -5deg);
   -moz-transform: rotate(225deg) skew(-5deg, -5deg);
   -ms-transform: rotate(225deg) skew(-5deg, -5deg);
   -o-transform: rotate(225deg) skew(-5deg, -5deg);
-
-
 }
 
 .ArrowSideLeftPopup {
-  position: absolute;
-  background-color: var(--white);
-
-  z-index: 9;
-  height: 13px;
-  width: 13px;
   transform: rotate(45deg) skew(-5deg, -5deg);
   right: -2rem;
-  bottom: 0.2rem;
-  border-radius: 0px 10px 0px 4px;
-  -webkit-border-radius: 0px 10px 0px 4px;
-  -moz-border-radius: 0px 10px 0px 4px;
-  -ms-border-radius: 0px 10px 0px 4px;
-  -o-border-radius: 0px 10px 0px 4px;
-  border-left: 1px solid var(--white);
-  border-bottom: 1px solid var(--white);
+  top: calc(50% - 0.4rem);
+  transform: translate(0, -50%);
   -webkit-transform: rotate(45deg) skew(-5deg, -5deg);
   -moz-transform: rotate(45deg) skew(-5deg, -5deg);
   -ms-transform: rotate(45deg) skew(-5deg, -5deg);
   -o-transform: rotate(45deg) skew(-5deg, -5deg);
 
- 
+
 }
 
+.ArrowSideRightPopup,
+.ArrowSideLeftPopup {
+  /* opacity: 1; */
+  opacity: 0;
+}
+
+.TopSecUp:hover .ArrowSideLeftPopup,
 .SideBarAccount:hover .ArrowSideRightPopup {
   opacity: 1;
-}
-
-.ArrowSideRightPopup {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out 1s;
-  -webkit-transition: opacity 0.3s ease-in-out 1s;
-  -moz-transition: opacity 0.3s ease-in-out 1s;
-  -ms-transition: opacity 0.3s ease-in-out 1s;
-  -o-transition: opacity 0.3s ease-in-out 1s;
-}
-
-.TopSecUp :hover .ArrowSideLeftPopup {
-  opacity: 1;
-}
-
-.ArrowSideLeftPopup {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out 1s;
-  -webkit-transition: opacity 0.3s ease-in-out 1s;
-  -moz-transition: opacity 0.3s ease-in-out 1s;
-  -ms-transition: opacity 0.3s ease-in-out 1s;
-  -o-transition: opacity 0.3s ease-in-out 1s;
 }

@@ -11,25 +11,29 @@
     align-items: center;
 }
 
+.LogoGroup img {
+    filter: var(--black-filter);
+}
+
 .divVers {
     background-color: var(--mainBgColor);
-  
-    color:var(--mainColor);
+
+    color: var(--mainColor);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
-    
+
 }
 
-.divVers p{
-font-size: 11px;
-font-weight: 500;
+.divVers p {
+    font-size: 11px;
+    font-weight: 500;
 }
 
-.LogoGroup p{
- line-height: 0;
- margin-left: 0.4rem;
+.LogoGroup p {
+    line-height: 0;
+    margin-left: 0.4rem;
 }
 
 .LogoText {

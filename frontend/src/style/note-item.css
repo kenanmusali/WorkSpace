@@ -1,0 +1,18 @@
+.divItemIcon {
+    position: relative;
+}
+
+.divItemGroupTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 0.5rem;
+}
+
+.divItemGroupBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    margin: 1rem 0rem 0.5rem 0rem;
+}

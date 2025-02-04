@@ -45,8 +45,7 @@ const Header = () => {
                         <p className="LogoText1">v1.1.0</p>
                     </div>
 
-                    <div className="PopUpLeft" data-alt={currentLanguage.sidebar}>
-                        <div className="ArrowSideLeftPopup"></div>
+                    <span className="PopUpLeft" data-alt={currentLanguage.sidebar}>
                         <img
                             className="IconHover IconToggle Icon"
                             src={iconSidebar}
@@ -54,7 +53,7 @@ const Header = () => {
                             alt="Sidebar"
                             onClick={toggleClass}
                         />
-                    </div>
+                    </span>
 
                 </div>
                 <div className="TopSecDown">
