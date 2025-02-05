@@ -1,62 +1,43 @@
-body.ClosedSb .sbSearch {
+
+
+
+body.ClosedSb .sbSearch,
+body.ClosedSb .hr,
+body.ClosedSb .SbItem,
+body.ClosedSb .SbListGroup,
+body.ClosedSb .divShade,
+body.ClosedSb .TopSecDown,
+body.ClosedSb .SbList,
+body.ClosedSb .SidebarAreaSlot {
     display: none;
+
 }
 
-body.ClosedSb .hr {
-    display: none;
-}
-
-body.ClosedSb .SbItem {
-    display: none;
-
-}
 
 body.ClosedSb .Sidebar {
-    height: 3.1rem;
+    height: 3.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: fit-content;
 }
 
-body.ClosedSb .TopSecDown {
-    display: none;
+
+body.ClosedSb .SidebarArea {
+    position: fixed;
 }
 
-body.ClosedSb .divShade {
-    display: none;
+body.ClosedSb .divHomeArea {
+    margin-right: 0;
 }
 
-body.ClosedSb .SbItemTop {
-    padding: 0.85rem 0.9rem;
-}
 
 body.ClosedSb .SidebarArea {
     height: fit-content;
 }
 
-body.ClosedSb .LogoText,
-body.ClosedSb .LogoText1 {
-    display: flex;
+body.ClosedSb .LogoGroup .LogoText1, body.ClosedSb .LogoGroup .LogoText {
+    display: flex ;
 }
 
-.LogoText {
-    display: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 0;
 
-}
-
-.LogoText1 {
-    display: none;
-    font-weight: 500;
-    font-size: 11px;
-    border-radius: 5px;
-    margin-left: 0.1rem;
-    padding: 0.2rem 0.4rem;
-    height: 1.3rem;
-    align-items: center;
-    justify-content: center;
-    color: var(--mainColor);
-    background-color: var(--mainBgColor);
-    margin-left: 0.5rem !important;
-    margin-right: 1rem;
-}

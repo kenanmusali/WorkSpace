@@ -68,6 +68,7 @@ const SidebarNotes = ({ onSidebarClick }) => {
 
                 </div>
             </div>
+            <div className="SidebarAreaSlot"></div>
         </div>
     )
 }

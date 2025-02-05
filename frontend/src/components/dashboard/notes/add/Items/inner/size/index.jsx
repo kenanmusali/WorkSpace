@@ -1,18 +1,18 @@
 import { useLanguage } from '../../../../../../../hooks/languageContext';
 import languageData from '../../../../../../../utils/languageData';
-import iconPin from '../../../../../../../assets/icons/Pin.svg'
+import iconSize from '../../../../../../../assets/icons/TextSize.svg'
 
-const Pin = () => {
+const Size = () => {
     const { language } = useLanguage();
     const currentLanguage = languageData[language] || languageData['en'];
 
     return (
         <>
             <div className="divItemIcon">
-                <div className="PopUpBottom" data-alt={currentLanguage.pin}>
+                <div className="PopUpTop" data-alt={currentLanguage.size}>
                     <img
                         className="IconHover IconBar Icon"
-                        src={iconPin}
+                        src={iconSize}
                         draggable="false"
                     />
                 </div>
@@ -21,4 +21,4 @@ const Pin = () => {
     )
 }
 
-export default Pin
+export default Size

@@ -31,7 +31,7 @@
    font-size: 16px;
    font-weight: 500;
    color: var(--grayText);
-   
+
 }
 
 .addNotesOn {
@@ -45,7 +45,7 @@
    flex-direction: column;
    gap: 1.2rem;
    background-color: var(--bgColorArea);
-   padding: 1.2rem 0.5rem;
+   padding: 1.2rem 0.5rem 0.8rem 0.5rem;
 }
 
 .titleInput,
@@ -61,49 +61,43 @@
 .titleInput {
    font-size: 16px;
    font-weight: 600;
+   color: var(--black);
 }
 
 .bodyInput {
    font-size: 14px;
+   color: var(--black);
 }
-
-
 
 .titleInput::placeholder,
 .bodyInput::placeholder {
    font-size: 16px;
    color: var(--grayText);
+}
+
+.titleInput::placeholder {
+   font-weight: 500;
+}
+
+.bodyInput::placeholder {
    font-weight: 400;
 }
 
- .titleInput:focus,
+.titleInput:focus,
 .bodyInput:focus {
-  border: none; 
-  outline: none; 
-  box-shadow: none; 
+   border: none;
+   outline: none;
+   box-shadow: none;
+}
+
+.bodyInput {
+   width: 100%;
+   resize: none;
+   white-space: pre-wrap;
+   overflow-wrap: break-word;
+   overflow-y: auto;
+   box-sizing: border-box;
+   line-height: 1.5;
 }
 
 
-
-
-
-
-
- .bodyInput {
-   width: 100%;
-   resize: none; 
-   white-space: pre-wrap; 
-   overflow-wrap: break-word; 
-   overflow-y: auto; 
-   box-sizing: border-box; 
-   line-height: 1.5; 
- }
-
- .hidden {
-   display: none;
- }
- 
- .show {
-   display: block;
- }
- 

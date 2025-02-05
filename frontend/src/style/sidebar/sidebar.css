@@ -2,6 +2,15 @@
     /* background-color: red; */
     padding: 0.7rem;
     height: 100vh;
+    position: fixed;
+
+    
+}
+.SidebarAreaSlot {
+    /* background-color: red; */
+width:  16.4rem;
+background-color: blue;
+    
 }
 
 .Sidebar {
@@ -11,4 +20,6 @@
     flex-direction: column;
     justify-content: space-between;
     /* overflow: hidden; */
+    
+
 }

@@ -7,6 +7,24 @@ import AutosizeTextarea from './textarea';
 import Format from './Items/inner/format';
 import '../../../../style/note-item.css'
 import Pin from './Items/outter/pin';
+import Typeface from './Items/inner/typeface';
+import Align from './Items/inner/align';
+import LetterHeight from './Items/inner/height';
+import Spacing from './Items/inner/spacing';
+import Case from './Items/inner/case';
+import Size from './Items/inner/size';
+import List from './Items/inner/list';
+import Emoji from './Items/inner/emoji';
+import Shortcut from './Items/inner/shortcut';
+import Reminder from './Items/outter/reminder';
+import Label from './Items/outter/label';
+import Archive from './Items/outter/archive';
+import Image from './Items/outter/image';
+import Checkbox from './Items/outter/checkbox';
+import Theme from './Items/outter/theme';
+import Draw from './Items/outter/draw';
+import Undo from './Items/outter/undo';
+import Rendo from './Items/outter/rendo';
 
 const AddNotes = () => {
   const { language } = useLanguage();
@@ -54,29 +72,30 @@ const AddNotes = () => {
                 <AutosizeTextarea />
                 <div className="divItemGroupTop">
                   <Format />
-                  <Format />
-                  <Format />
-                  <Format />
-                  <Format />
-                  <Format />
-                  <Format />
-                  <Format />
-                  <Format />
-                  <Format />
+                  <Typeface />
+                  <Align />
+                  <LetterHeight />
+                  <Spacing />
+                  <Case />
+                  <Size />
+                  <List />
+                  <Emoji />
+                  <Shortcut />
+
                 </div>
               </div>
               <div className="divItemGroupBottom">
-                  <Pin/>
-                  <Pin/>
-                  <Pin/>
-                  <Pin/>
-                  <Pin/>
-                  <Pin/>
-                  <Pin/>
-                  <Pin/>
-                  <Pin/>
-                  <Pin/>
-                </div>
+                <Pin />
+                <Reminder />
+                <Label />
+                <Archive />
+                <Image />
+                <Checkbox />
+                <Theme />
+                <Draw />
+                <Undo />
+                <Rendo />
+              </div>
             </div>
           )}
 

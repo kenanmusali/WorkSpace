@@ -10,9 +10,9 @@
   height: 19px;
 }
 
-.IconToggle {
+/* .IconToggle {
   margin-top: 0.045rem;
-}
+} */
 
 .PopUpRight::after,
 .PopUpLeft::after,
@@ -43,9 +43,9 @@
 }
 
 .PopUpTop::after {
-  left: -100%;
   bottom: 2.2rem;
-  
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .PopUpRight::after {
@@ -55,8 +55,13 @@
 }
 
 .PopUpBottom::after {
-  left: -100%;
-  top: 3.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3.2rem;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .PopUpRight:hover::after,
@@ -64,7 +69,7 @@
 .PopUpTop:hover::after,
 .PopUpBottom:hover::after {
   opacity: 1;
-
+  mix-blend-mode: normal;
 }
 
 .ArrowSideRightPopup,
@@ -115,3 +120,16 @@
 .SideBarAccount:hover .ArrowSideRightPopup {
   opacity: 1;
 }
+
+.divItemIcon .PopUpTop .IconBar,
+.divItemIcon .PopUpBottom  .IconBar {
+  mix-blend-mode: difference;
+}
+
+.divItemIcon .PopUpTop .IconBar:hover,
+.divItemIcon .PopUpBottom  .IconBar:hover{
+mix-blend-mode: normal;
+filter: var(--black-filter) ;
+
+}
+

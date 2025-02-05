@@ -1,12 +1,13 @@
 .SideBarAccount {
     position: absolute;
-    right: .7rem;
-    top: .7rem;
+    right: 0.7rem;
+    top: 0.7rem;
     width: -moz-fit-content;
     width: fit-content;
-    padding: .6rem .6rem .6rem .9rem;
+    padding: 0rem 0.7rem 0rem 0.9rem;
     display: flex;
     flex-direction: column;
+    height: 3.3rem;
     justify-content: center;
 }
 

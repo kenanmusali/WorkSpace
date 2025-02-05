@@ -30,7 +30,7 @@ import Schedule from '../../../sections/calendar/schedule';
 
 const SidebarCalendar = ({ onSidebarClick }) => {
     return (
-        <div>
+        <>
             <div className="SidebarArea noSelect">
                 <div className="Sidebar sectionStyle">
                     <div className="SbTop">
@@ -90,7 +90,8 @@ const SidebarCalendar = ({ onSidebarClick }) => {
 
                 </div>
             </div>
-        </div>
+            <div className="SidebarAreaSlot"></div>
+        </>
     )
 }
 

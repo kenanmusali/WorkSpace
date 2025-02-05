@@ -5,6 +5,8 @@
     .TopSecDown,
     body.ClosedSb .LogoText,
     body.ClosedSb .LogoText1,
+    .LogoGroup .LogoText,
+    .LogoGroup .LogoText1,
     .LogoGroup {
         display: none !important;
     }
@@ -42,7 +44,9 @@
     body.ClosedSb .ItemSectionGroup .ItemSection .p,
     body.ClosedSb .SearchInput,
     body.ClosedSb .TopSecDown,
-    body.ClosedSb .LogoGroup {
+    body.ClosedSb .LogoGroup,
+    body.ClosedSb .Sidebar,
+    body.ClosedSb .SbList {
         display: flex !important;
 
     }
@@ -120,10 +124,66 @@
     .ResponsiveOn {
         display: none;
     }
-    .IconToggle  {
+
+    .IconToggle {
         margin-top: 0rem !important;
-      }
-      
+    }
+
+    body.ClosedSb .SbList {
+        display: none;
+
+    }
+
+
+    body.ClosedSb .Sidebar {
+        display: flex !important;
+        align-items: normal !important;
+    }
+
+
+    body.ClosedSb .Sidebar {
+        height: 3.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+
+    .AddArea {
+        min-height: fit-content !important;
+        padding-right: 6.25rem !important;
+    }
+
+    body.ClosedSb .AddArea {
+        padding-right: 6.95rem !important;
+        padding-left: 1rem;
+    }
+
+    body.ClosedSb .GroupParent {
+        margin-left: 4.7rem;
+        padding-inline: 0.7rem !important;
+    }
+
+  .GroupParent {
+        padding-inline: 0rem !important;
+
+    }
+
+    .SidebarAreaSlot {
+        width: 5.4rem !important;
+    }
+
+    body.ClosedSb .SidebarAreaSlot {
+        width: 15.4rem !important;
+    }
+
+
+    /* .addNotesOn  {
+        position: absolute;
+        width: 100%;
+        height: 100dvh !important;
+        z-index: 1;
+    } */
 
 }
 
@@ -131,4 +191,22 @@
     .ResponsiveOn {
         display: none;
     }
+
+    .AddGroup {
+        padding-inline: 0.7rem;
+    }
+
+    body.ClosedSb .AddGroup {
+        padding-inline: 4.2rem;
+    }
+
+    .AddArea {
+        min-height: 27vh !important;
+    }
+
+    body.ClosedSb .GroupParent {
+        padding-inline: 1.4rem !important;
+    }
+
+
 }

@@ -9,9 +9,9 @@ const Format = () => {
     return (
         <>
             <div className="divItemIcon">
-                <div className="PopUpTop" data-alt={currentLanguage.sidebar}>
+                <div className="PopUpTop" data-alt={currentLanguage.format}>
                     <img
-                        className="IconHover IconToggle Icon"
+                        className="IconHover IconBar Icon"
                         src={iconFormat}
                         draggable="false"
                     />
