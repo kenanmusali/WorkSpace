@@ -208,5 +208,8 @@
         padding-inline: 1.4rem !important;
     }
 
+    .SidebarArea {
+        height: 100dvh;
+    }
 
 }
