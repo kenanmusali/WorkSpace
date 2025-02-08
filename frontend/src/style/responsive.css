@@ -177,13 +177,27 @@
         width: 15.4rem !important;
     }
 
-
-    /* .addNotesOn  {
-        position: absolute;
+    .addNotesOn  {
+        position: fixed;
         width: 100%;
+        left: 0;
+        top: 0;
         height: 100dvh !important;
         z-index: 1;
-    } */
+        padding: 0.7rem !important;
+        border-radius:0 !important;
+        outline: 10px solid var(--white) !important;
+    }
+
+    .textArea {
+        height: calc(100% - 3.4rem);
+        background-color: red;
+        justify-content: space-between;
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem !important;
+    } 
+    .divItemGroupBottom {
+        margin: 1.4rem 0rem 0.4rem 0rem !important;
+    }
 
 }
 

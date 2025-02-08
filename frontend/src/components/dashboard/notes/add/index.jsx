@@ -69,7 +69,9 @@ const AddNotes = () => {
               ref={addNotesOnRef}
             >
               <div className="textArea">
-                <AutosizeTextarea />
+                <div className="textAreGroup">
+                  <AutosizeTextarea />
+                </div>
                 <div className="divItemGroupTop">
                   <Format />
                   <Typeface />

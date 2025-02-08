@@ -43,9 +43,15 @@
    border-radius: 5px;
    display: flex;
    flex-direction: column;
-   gap: 1.2rem;
    background-color: var(--bgColorArea);
    padding: 1.2rem 0.5rem 0.8rem 0.5rem;
+}
+
+.textAreGroup {
+   margin-bottom: 1.2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
 }
 
 .titleInput,
